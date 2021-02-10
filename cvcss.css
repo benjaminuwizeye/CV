@@ -1,0 +1,93 @@
+body{
+    background-color:#222;
+}
+.navbar{
+    font-size: 12px;
+}
+
+.navbar-brand{
+padding-left: 15px;
+}
+
+.navbar{
+    text-align: center;
+}
+
+
+#cv-body{
+    margin-top:15px;
+    background-color:#222;
+}
+
+.column{
+    color:white;
+    width: 50%;
+    float: left;
+    padding:20px;
+}
+
+.row{
+    margin-left: 20px;
+    margin-right: 20px;
+}
+.left {
+    width: 35%;
+  }
+  
+  .right {
+    width: 65%;
+  }
+@media screen and (max-width:600px){
+    .column{
+    width:100%;
+    }   
+}
+
+.dropdown li a{
+    background-color: #222;
+    color:white;
+}
+
+#competence img{
+    margin-top:20px;
+    width:100px;
+}
+#profile{
+    width:
+    display:inline-block;
+}
+
+#formation{
+    color:white;
+    background-color:darkslategrey;
+    padding: 15px;
+    margin-left: 20px;
+}
+
+footer{
+    text-align: center;
+    background-color:#222;
+    color:white;
+    padding:0px;
+    
+}
+footer ul li{
+    list-style: none;
+    float:left;
+    margin-right: 60px;
+    
+   
+    
+}
+footer #links{
+   float:right;
+   
+}
+
+.grid-container{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 20px;
+    padding:20px;
+    
+}

@@ -62,7 +62,13 @@ padding-left: 15px;
     background-color:darkslategrey;
     padding: 15px;
     margin-left: 20px;
+    margin-right: 20px;
+    
 }
+#formation h2{
+    text-align: center;
+}
+
 
 footer{
     text-align: center;

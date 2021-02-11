@@ -152,8 +152,7 @@ footer{
     text-align: center;
     background-color:#222;
     color:white;
-    padding:0px;
-    
+    padding:0px;    
 }
 footer ul li{
     list-style: none;
@@ -174,4 +173,19 @@ footer #links{
     grid-gap: 20px;
     padding:20px;
     
+}
+#gototop{
+    color:black;
+    
+}
+#gototop button{
+    background-color:darkgrey;
+    border: none;
+    border-style: none;
+    border-radius: 5px;
+}
+
+#gototop button:hover{
+    background-color:darkslateblue;
+    color:white;
 }

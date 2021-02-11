@@ -37,11 +37,59 @@ padding-left: 15px;
   .right {
     width: 65%;
   }
-@media screen and (max-width:600px){
+
+
+@media screen and (max-width:767px){
     .column{
     width:100%;
     }   
 }
+@media screen and (min-width:500px) and (max-width:767px){
+    #competence .column{
+        width:40%;
+    }
+    
+}
+@media screen and (min-width:767px) and (max-width:1115px){
+    #competence .column{
+        width:100%;
+        text-align: center;
+        padding-top:0px;
+        padding-bottom:0px;
+    }
+    #competence .column img{
+        margin-top:70px;
+    }
+}
+@media screen and (min-width:767px) and (max-width:992px){
+    #competence .column{
+        text-align: left;
+        padding-top:0px;
+        padding-bottom:0px;
+    }
+    #competence .column img{
+        margin-top:170px;
+    }
+    #experience{
+        margin-top:170px;
+    }
+}
+@media screen and (min-width:991px) and (max-width:1114px){
+    
+    #experience{
+        margin-top:70px;
+    }
+}
+@media screen and (min-width:1115px) and (max-width:1200px){
+    
+    #experience{
+        margin-top:70px;
+    }
+    #competence{
+        margin-top:30px
+    }
+}
+
 
 .dropdown li a{
     background-color: #222;

@@ -4,10 +4,19 @@
         <title> Benjamin CV</title>
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
+        <!--
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
         <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
         <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet"/>
+        -->
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+
+        <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css" integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous">
+
         <link rel="stylesheet" href="cvcss.css">
         <script src="cvjs.js"></script>
 
@@ -16,50 +25,84 @@
 
 
         <section id="cv-header">
-            <nav class="navbar navbar-inverse navbar-fixed-top">
-                <div class="container">
-                    <div class="navbar-header">
-                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#mynavbar">
-                        <span class="icon-bar"></span>
-                        <span class="icon-bar"></span>
-                        <span class="icon-bar"></span>
-                    </button> 
-
-                    <a class="navbar-brand" href="#home">
-                       
-                        BENJAMIN UWIZEYE</a>
-                    </div>
-                    <div class="collapse navbar-collapse" id="mynavbar">
-                        <ul class="nav navbar-nav">
-                            <li class="active"><a href="#profile">Profil</a></li>
-                            <li><a href="#competence"> COMPETENCE</a></li>
-                            <li><a href="#experience">EXPERIENCE PROFESSIONNELLE</a></li>
-                            <li> <a href="#formation">FORMATION</a></li>
-                            <li> <a href="#interest">CENTRE D'INTERET</a></li>
-                            <li>
-                                <ul class="nav navbar-nav navbar-right">
-                                    <li class="dropdown"> 
-                                        <a href="#contact" class="dropdown-toggle" data-toggle="dropdown" role="button"> <span class="glyphicon glyphicon-earphone"></span> CONTACT <span class="caret"></span></a>
-                                        <ul class="dropdown-menu">
-                                            <li> <a href="tel:+33605704390"><span class="glyphicon glyphicon-earphone"></span> 06 05 70 43 90</a></li>
-                                            <li> <a href="mailto:benjaminuwizeye@ymail.com"><span class="glyphicon glyphicon-envelope"></span> benjaminuwizeye@ymail.com </a></li>
-                                            <li> <a href="https://www.google.com/maps/place/92+Route+d'Espagne,+31100+Toulouse/@43.5731198,1.4218781,17z/data=!3m1!4b1!4m5!3m4!1s0x12aebbbfd66b5295:0x45786e0dcd403ac6!8m2!3d43.5731198!4d1.4240668" target="_blank"><span class="glyphicon glyphicon-home"></span> 92 Route d'Espagne 31100 Toulouse</a></li>
-                                        </ul>
-                                    </li>
-                                    <li> <a href="#links"> <span class="glyphicon glyphicon-link"></span> LIENS</a></li>
-                                </ul>
-                            </li>
-                            <li class="dropdown">
-                                <a href="#langue" class="dropdown-toggle" data-toggle="dropdown" role="button"> LANGUE <span class="caret"></span></a>
-                                <ul class="dropdown-menu">
-                                    <li><a href="#"> Français</a></li>
-                                    <li><a href="#"> Anglais</a></li>
-                                </ul>
-                            </li>
-                        </ul>
-                        
-                    </div>
-                </div>
+            <nav class="navbar navbar-expand-md bg-dark navbar-dark">
+                <a class="navbar-brand" href="#">UWIZEYE BENJAMIN</a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+                  <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse " id="collapsibleNavbar">
+                  <ul class="navbar-nav">
+                    <li class="nav-item active">
+                        <a class="nav-link" data-toggle="modal" data-target="#mymodal" href="#">PROFILE</a>
+                        <div class="modal" id="mymodal">
+                            <div class="modal-dialog">
+                              <div class="modal-content">
+                          
+                                <!-- Modal Header -->
+                                <div class="modal-header">
+                                  <h4 class="modal-title">UWIZEYE BENJAMIN</h4>
+                                  <button type="button" class="close" data-dismiss="modal">&times;</button>
+                                </div>
+                          
+                                <!-- Modal body -->
+                                <div class="modal-body">
+                                    <p>
+                                        Diplômé en 2020 de  M2-Electronique, énergie, électrique, automatique
+                                        PT Capteurs intelligents et micro-nano-technologies (NANCY) (FI),
+                                     je cherche une nouvelle opportunité dans le domaine 
+                                     de l'électronique et de l'informatique industrielle. 
+                                    </p>
+                                    <p>
+                                        Dans le cas écheant je cherche également une opportunité 
+                                        de réconversion informatique développeur web & Application mobile
+                                    </p>
+                                </div>
+                          
+                                <!-- Modal footer -->
+                                <div class="modal-footer">
+                                  <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
+                                </div>
+                          
+                              </div>
+                            </div>
+                          </div>
+                      </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="#competence">COMPETENCE</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="#experience">EXPERIENCE PROFESSIONNELLE</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="#formation">FORMATION</a>
+                    </li> 
+                    <li class="nav-item">
+                        <a class="nav-link" href="#interest">CENTRE D'INTERET</a>
+                    </li> 
+                    <form class="form-inline">
+                        <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+                        <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+                      </form>
+                  </ul>
+                    <ul class="navbar-nav ml-auto"> 
+                    <li class="nav-item ">
+                        <div class="dropdown show">
+                            <a class="nav-link dropdown-toggle" href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                              CONTACT
+                            </a>
+                          
+                            <div class="dropdown-menu dropdown-menu-right" aria-labelledby="dropdownMenuLink">
+                              <a class="dropdown-item" href="tel:+33605704390"><i class="fa-phone"></i> 06 05 70 43 90</a>
+                              <a class="dropdown-item" href="mailto:benjaminuwizeye@ymail.com"><i class="fa-envelope"></i> benjaminuwizeye@ymail.com</a>
+                              <a class="dropdown-item" href="https://www.google.com/maps/place/92+Route+d'Espagne,+31100+Toulouse/@43.5731198,1.4218781,17z/data=!3m1!4b1!4m5!3m4!1s0x12aebbbfd66b5295:0x45786e0dcd403ac6!8m2!3d43.5731198!4d1.4240668" target="_blank"><span class="glyphicon glyphicon-home"></span> 92 Route d'Espagne 31100 Toulouse</a>
+                            </div>
+                          </div>
+                    </li>   
+                    <li class="nav-item">
+                        <a class="nav-link" href="#links">LIENS</a>
+                    </li>  
+                  </ul>
+                </div>  
             </nav>
 
 
@@ -133,7 +176,7 @@
                              de défaillance de pompe à vide de type 
                              load-lock destinée au marché des semi-conducteurs. /
                              <span class="entreprise">Pfeiffer Vacuum</span>
-                             <p class="adresse_entreprise">98 Avenue de Brogny, 74000 Annecy
+                             <p class="adresse_entreprise">98 Avenue de Brogny, 74000 Annecy <br>
                                 De Février 2020 à Juillet 2020(5mois)</p>
 
                                 <ul> 
@@ -157,7 +200,7 @@
                             Conception et Validation d’un réseau 
                             des neurones (SOM : Self Organizing Map)/
                             <span class="entreprise">Institut Jean Lamour</span>
-                           <p class="adresse_entreprise">Campus Artem, 2 allée André Guinier, 54011 Nancy
+                           <p class="adresse_entreprise">Campus Artem, 2 allée André Guinier, 54011 Nancy <br>
                             De septembre 2019 à Décembre 2019(4mois)</p> 
                             <p>
                                 Description comportementale d’un réseau SOM en langage 
@@ -169,7 +212,7 @@
                             Montage d’un banc de test de dispositif piézoélectrique
                              de déformation piézoélectrique /
                             <span class="entreprise">Institut Jean Lamour</span>
-                           <p class="adresse_entreprise">Campus Artem, 2 allée André Guinier, 54011 Nancy
+                           <p class="adresse_entreprise">Campus Artem, 2 allée André Guinier, 54011 Nancy <br>
                             De novembre 2018 à mars 2019(5mois)</p> 
                             <p>
                                 Montage et implémentation d'un banc de test 
@@ -192,7 +235,7 @@
                             Réalisation d'un feu de trafic routier à base de circuits intégrés
                             NE555 et CD4017 /
                             <span class="entreprise">Université Djillali Liabes de Sidi Bel Abbes.</span>
-                           <p class="adresse_entreprise">Sidi Bel Abbès,
+                           <p class="adresse_entreprise">Sidi Bel Abbès, <br>
                             De Janvier 2016 à Juin 2016(6mois)</p> 
                         </li>
                       </ul>
@@ -207,7 +250,7 @@
                         <span class="entreprise">Institut Jean
                             Lamour Campus Artem</span>
                             <p class="adresse_entreprise">
-                                Campus Artem, 2 allée André Guinier, 54011 Nancy 
+                                Campus Artem, 2 allée André Guinier, 54011 Nancy <br>
                                 Depuis septembre 2018 à septembre 2020 :
                             </p>
                             <ul>
@@ -219,7 +262,7 @@
                     <li>Master1 Électronique Embarqué & Microsystèmes 
                         <span class="entreprise">Université de Lorraine</span>
                             <p class="adresse_entreprise">
-                                Campus Aiguillettes, 54506 Vandoeuvre-lès-Nancy
+                                Campus Aiguillettes, 54506 Vandoeuvre-lès-Nancy <br>
                                 De septembre 2016 à septembre 2018 :
                             </p>
                             <ul>
@@ -232,7 +275,7 @@
                     <li>Licence Electronique 
                         <span class="entreprise">Université Djillali Liabes de Sidi Bel Abbes</span>
                             <p class="adresse_entreprise">
-                                Sidi Bel Abbès,
+                                Sidi Bel Abbès,<br>
                                 De septembre 2013 à septembre 2016 :
                             </p>
                             <ul>
@@ -250,20 +293,22 @@
             
             <div class="grid-container" >
                 <div class="grid-child">
-                    <h2>Centre d'intérêt</h2>
+                    <h2>TELECHARGER</h2>
                     <ul>
-                        <li><p> Musique_Piano</p></li>
-                        <li><p>Voyager:Belgium, Germany</p></li>
+                        <li><p> Clicker ci-dessous pour télecharger mon CV en pdf </p></li>
+                        <li>
+                            <a href="Benjamin cv.pdf" download="Benjamin CV"><button class="btn"><i class="fa fa-download"></i> Télecharger</button></a>
+                        </li>
                     </ul>
                 </div>
                 <div class="grid-child">
                     <h2>Liens</h2>
                     <ul id="links">
                         <li><a href="https://www.linkedin.com/in/uwzybeni/" target="_blank">
-                            <i class="fa fa-linkedin"></i>
+                            <i class="fab fa-linkedin"></i>
                              Linkedin</a></li>
                         <li><a href="https://github.com/benjaminuwizeye" target="_blank">
-                            <i class="fa fa-github"></i>
+                            <i class="fab fa-github"></i>
                             github</a></li>
                     </ul>
                 </div>

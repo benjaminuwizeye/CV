@@ -42,24 +42,36 @@ padding-left: 15px;
 @media screen and (max-width:767px){
     .column{
     width:100%;
-    }   
+    } 
+    #righthandside{
+        border-top: 2px solid red;
+        
+    }  
 }
 @media screen and (min-width:500px) and (max-width:767px){
     #competence .column{
         width:40%;
     }
     
+    
 }
 @media screen and (min-width:767px) and (max-width:1115px){
     #competence .column{
         width:100%;
-        text-align: center;
-        padding-top:0px;
-        padding-bottom:0px;
     }
     #competence .column img{
         margin-top:70px;
     }
+    #competence .row{
+        padding-left: 0px;
+        margin-left: 0px;
+    }
+    #lefthandside{
+        border-right: 2px solid red;
+        
+    }  
+
+    
 }
 @media screen and (min-width:767px) and (max-width:992px){
     #competence .column{
@@ -68,26 +80,36 @@ padding-left: 15px;
         padding-bottom:0px;
     }
     #competence .column img{
-        margin-top:170px;
+        margin-top:190px;
     }
     #experience{
-        margin-top:170px;
+        margin-top:190px;
     }
 }
 @media screen and (min-width:991px) and (max-width:1114px){
     
     #experience{
-        margin-top:70px;
+        margin-top:90px;
     }
 }
 @media screen and (min-width:1115px) and (max-width:1200px){
     
     #experience{
-        margin-top:70px;
+        margin-top:90px;
     }
     #competence{
-        margin-top:30px
+        margin-top:50px
     }
+    #lefthandside{
+        border-right: 2px solid red;
+        
+    } 
+}
+@media screen and (min-width:1200px){
+    #lefthandside{
+        border-right: 2px solid red;
+        
+    } 
 }
 
 
@@ -99,7 +121,13 @@ padding-left: 15px;
 #competence img{
     margin-top:20px;
     width:100px;
+    
 }
+#competence h2{
+    border-top: 5px solid #222;
+    padding:2px;
+}
+
 #profile{
     width:
     display:inline-block;
@@ -111,6 +139,8 @@ padding-left: 15px;
     padding: 15px;
     margin-left: 20px;
     margin-right: 20px;
+    border-top: 2px solid red;
+    border-bottom: 2px solid red;
     
 }
 #formation h2{

@@ -202,4 +202,12 @@ footer #links{
 .form-inline{
     margin-left: 10px;
 }
-
+small{
+    
+    border-bottom: 2px solid rgb(79, 73, 88);
+    padding-bottom:10px;
+    
+}
+#borderbottom{
+    margin-bottom: 50px;
+}

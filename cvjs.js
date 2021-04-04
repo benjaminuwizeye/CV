@@ -1,18 +1,16 @@
-var mybtn= document.getElementById("mybutton");
-window.onscroll=function(){
-    scrollFunction()};
-
-
-function scrollFunction(){
-    if(document.body.scrollTop>100 || document.documentElement.scrollTop>100){
-        mybtn.style.display="block";
-    }
-    else{
-        mybtn.style.display="none";
-    }
-}
-
-function topfunction(){
-    document.body.scrollTop=0;
-    document.documentElement.scrollTop=0;
-}
+$(document).ready(function(){
+	$(window).scroll(function () {
+			if ($(this).scrollTop() > 10) {
+				$('#back-to-top').fadeIn();
+			} else {
+				$('#back-to-top').fadeOut();
+			}
+		});
+		// scroll body to 0px on click
+		$('#back-to-top').click(function () {
+			$('body,html').animate({
+				scrollTop: 0
+			}, 400);
+			return false;
+		});
+});

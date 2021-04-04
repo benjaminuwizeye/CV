@@ -44,7 +44,7 @@ padding-left: 15px;
     width:100%;
     } 
     #righthandside{
-        border-top: 2px solid red;
+        border-top: 2px solid rgb(87, 48, 48);
         
     }  
 }
@@ -67,7 +67,7 @@ padding-left: 15px;
         margin-left: 0px;
     }
     #lefthandside{
-        border-right: 2px solid red;
+        border-right: 2px solid rgb(87, 48, 48);
         
     }  
 
@@ -101,7 +101,7 @@ padding-left: 15px;
         margin-top:50px
     }
     #lefthandside{
-        border-right: 2px solid red;
+        border-right: 2px solid rgb(87, 48, 48);
         
     } 
     footer #links{
@@ -110,7 +110,7 @@ padding-left: 15px;
 }
 @media screen and (min-width:1200px){
     #lefthandside{
-        border-right: 2px solid red;
+        border-right: 2px solid rgb(87, 48, 48);
         
     } 
     footer #links{
@@ -141,12 +141,12 @@ padding-left: 15px;
 
 #formation{
     color:white;
-    background-color:darkslategrey;
+    background-color:rgb(60, 71, 71);
     padding: 15px;
     margin-left: 20px;
     margin-right: 20px;
-    border-top: 2px solid red;
-    border-bottom: 2px solid red;
+    border-top: 2px solid rgb(87, 48, 48);
+    border-bottom: 2px solid rgb(87, 48, 48)ed;
     
 }
 #formation h2{
@@ -180,21 +180,15 @@ footer #links{
     padding:20px;
     
 }
-#gototop{
-    color:black;
+
+.back-to-top {
+    position: fixed;
+    bottom: 25px;
+    right: 25px;
     
 }
-#gototop button{
-    background-color:darkgrey;
-    border: none;
-    border-style: none;
-    border-radius: 5px;
-}
 
-#gototop button:hover{
-    background-color:darkslateblue;
-    color:white;
-}
+
 
 
 /*********************/
@@ -213,4 +207,33 @@ small{
 }
 #download{
     background-color:rgb(79, 79, 231);
+}
+
+
+/* resizing section*/
+h1{
+    font-size: 28px;
+}
+
+/* increasing spaces between paragraphes*/
+#righthandside p {
+    margin-top: 2.5em;
+    margin-bottom: 2.5em;
+}
+
+/* adding space between formations */
+#formation ul{
+    margin-top: 2.5em;
+    margin-bottom: 2.5em;
+}
+
+/* resizing formations */
+#formation .formationentete{
+    font-weight: bold;
+    font-size: 1.5em;
+}
+
+/*resizing dates chronologies*/
+.date{
+    font-style: italic;
 }

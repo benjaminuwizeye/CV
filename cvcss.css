@@ -3,6 +3,8 @@ body{
 }
 .navbar{
     font-size: 12px;
+    position: fixed;
+    width:100%;
 }
 
 .navbar-brand{

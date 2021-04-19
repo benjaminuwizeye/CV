@@ -3,8 +3,7 @@ body{
 }
 .navbar{
     font-size: 12px;
-    position: fixed;
-    width:100%;
+    top:Opx;
 }
 
 .navbar-brand{
@@ -143,7 +142,7 @@ padding-left: 15px;
 
 #formation{
     color:white;
-    background-color:rgb(60, 71, 71);
+    background-color:rgb(41, 39, 39);
     padding: 15px;
     margin-left: 20px;
     margin-right: 20px;
@@ -205,7 +204,7 @@ small{
     
 }
 #borderbottom{
-    margin-bottom: 100px;
+    margin-bottom: 50px;
 }
 #download{
     background-color:rgb(79, 79, 231);

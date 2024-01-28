@@ -238,3 +238,24 @@ h1{
 .date{
     font-style: italic;
 }
+
+.header-container {
+    display: flex;
+    align-items: baseline; /* Align items to their baselines */
+}
+
+h3 {
+    font-size: 24px; /* Adjust font size as needed */
+    margin-right: 10px; /* Add some spacing between h3 and span */
+}
+
+.entreprise {
+    font-size: 18px; /* Adjust font size as needed */
+}
+
+
+.rounded-image {
+    border-radius: 50%; /* This will make the image round */
+    /* You can also specify a specific value in pixels for more control: border-radius: 10px; */
+}
+

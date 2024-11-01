@@ -1,261 +1,188 @@
-body{
-    background-color:#222;
-}
-.navbar{
-    font-size: 12px;
-    top:Opx;
-}
-
-.navbar-brand{
-padding-left: 15px;
-}
-
-.navbar{
-    text-align: center;
+/* General Styles */
+body {
+    font-family: 'Montserrat', sans-serif;
+    background: linear-gradient(135deg, #f5f7fa, #e0eafc);
+    color: #333;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
 }
 
-
-#cv-body{
-    margin-top:15px;
-    background-color:#222;
+.container {
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 0 15px;
+    flex-grow: 1;
 }
 
-.column{
-    color:white;
-    width: 50%;
-    float: left;
-    padding:20px;
+/* Header Styling */
+.header {
+    background-color: #2c3e50;
+    color: white;
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative; /* Allows absolute positioning of child elements */
 }
 
-.row{
+.branding {
+    display: flex;
+    align-items: center;
+}
+
+.branding-text {
     margin-left: 20px;
-    margin-right: 20px;
 }
-.left {
-    width: 35%;
-  }
-  
-  .right {
-    width: 65%;
-  }
 
-
-@media screen and (max-width:767px){
-    .column{
-    width:100%;
-    } 
-    #righthandside{
-        border-top: 2px solid rgb(87, 48, 48);
-        
-    }  
-}
-@media screen and (min-width:500px) and (max-width:767px){
-    #competence .column{
-        width:40%;
-    }
-    
-    
-}
-@media screen and (min-width:767px) and (max-width:1115px){
-    #competence .column{
-        width:100%;
-    }
-    #competence .column img{
-        margin-top:70px;
-    }
-    #competence .row{
-        padding-left: 0px;
-        margin-left: 0px;
-    }
-    #lefthandside{
-        border-right: 2px solid rgb(87, 48, 48);
-        
-    }  
-
-    
-}
-@media screen and (min-width:767px) and (max-width:992px){
-    #competence .column{
-        text-align: left;
-        padding-top:0px;
-        padding-bottom:0px;
-    }
-    #competence .column img{
-        margin-top:190px;
-    }
-    #experience{
-        margin-top:190px;
-    }
-}
-@media screen and (min-width:991px) and (max-width:1114px){
-    
-    #experience{
-        margin-top:90px;
-    }
-}
-@media screen and (min-width:1115px) and (max-width:1200px){
-    
-    #experience{
-        margin-top:90px;
-    }
-    #competence{
-        margin-top:50px
-    }
-    #lefthandside{
-        border-right: 2px solid rgb(87, 48, 48);
-        
-    } 
-    footer #links{
-        margin-right: 150px;
-    }
-}
-@media screen and (min-width:1200px){
-    #lefthandside{
-        border-right: 2px solid rgb(87, 48, 48);
-        
-    } 
-    footer #links{
-        margin-right: 150px;
-    }
+.profile-photo {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    border: 2px solid white;
+    position: absolute;  /* Allows for precise positioning */
+    top: 20px;           /* Adjust this value for vertical alignment */
+    right: 20px;         /* Moves the photo to the right side */
 }
 
 
-.dropdown li a{
-    background-color: #222;
-    color:white;
+.navbar ul {
+    list-style-type: none;
+    display: flex;
+    margin: 0;
+    padding: 0;
 }
 
-#competence img{
-    margin-top:20px;
-    width:100px;
-    
-}
-#competence h2{
-    border-top: 5px solid #222;
-    padding-top:20px;
-}
-
-#profile{
-    width:
-    display:inline-block;
-}
-
-#formation{
-    color:white;
-    background-color:rgb(41, 39, 39);
-    padding: 15px;
+.navbar ul li {
     margin-left: 20px;
+}
+
+.navbar ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: 600;
+    transition: color 0.3s ease;
+}
+
+.navbar ul li a:hover {
+    color: #3498db;
+}
+
+/* Scrollable Experience Cards */
+.experience-wrapper {
+    display: flex;
+    overflow-x: auto;
+    padding-bottom: 20px;
+}
+
+.experience-card {
+    min-width: 300px;
+    background-color: white;
     margin-right: 20px;
-    border-top: 2px solid rgb(87, 48, 48);
-    border-bottom: 2px solid rgb(87, 48, 48)ed;
-    
-}
-#formation h2{
-    text-align: center;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    cursor: pointer;
+    transition: transform 0.3s ease;
 }
 
-
-footer{
-    text-align: center;
-    background-color:#222;
-    color:white;
-    padding:0px;    
+.experience-card:hover {
+    transform: translateY(-5px);
 }
-footer ul li{
+
+.click-hint {
+    color: #3498db;
+    font-size: 0.9em;
+    margin-top: 10px;
+}
+
+.experience-details {
+    display: none;
+}
+
+/* Contact Section */
+.contact-section {
+    background-color: #2c3e50;
+    color: white;
+    padding: 40px 0;
+}
+
+.contact-info p {
+    margin: 5px 0;
+}
+
+.list-inline {
     list-style: none;
-    float:left;
-    margin-right: 60px;
-    
-   
-    
-}
-footer #links{
-   float:right;
-   
+    padding: 0;
+    display: flex;
+    justify-content: center;
 }
 
-.grid-container{
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-gap: 20px;
-    padding:20px;
-    
+.list-inline-item {
+    margin: 0 10px;
 }
 
-.back-to-top {
-    position: fixed;
-    bottom: 25px;
-    right: 25px;
-    
-}
-
-
-
-
-/*********************/
-
-.form-inline{
-    margin-left: 10px;
-}
-small{
-    
-    border-bottom: 2px solid rgb(79, 73, 88);
-    padding-bottom:10px;
-    
-}
-#borderbottom{
-    margin-bottom: 50px;
-}
-#download{
-    background-color:rgb(79, 79, 231);
-}
-
-
-/* resizing section*/
-h1{
-    font-size: 28px;
-}
-
-/* increasing spaces between paragraphes*/
-#righthandside p {
-    margin-top: 2.5em;
-    margin-bottom: 2.5em;
-}
-
-/* adding space between formations */
-#formation ul{
-    margin-top: 2.5em;
-    margin-bottom: 2.5em;
-}
-
-/* resizing formations */
-#formation .formationentete{
-    font-weight: bold;
+.list-inline-item a {
+    color: white;
     font-size: 1.5em;
 }
 
-/*resizing dates chronologies*/
-.date{
-    font-style: italic;
-}
-
-.header-container {
+/* General Styles */
+body {
+    font-family: 'Montserrat', sans-serif;
+    background: linear-gradient(135deg, #f5f7fa, #e0eafc);
+    color: #333;
+    margin: 0;
+    padding: 0;
     display: flex;
-    align-items: baseline; /* Align items to their baselines */
+    flex-direction: column;
+    min-height: 100vh;
 }
 
-h3 {
-    font-size: 24px; /* Adjust font size as needed */
-    margin-right: 10px; /* Add some spacing between h3 and span */
+.container {
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 0 15px;
+    flex-grow: 1;
 }
 
-.entreprise {
-    font-size: 18px; /* Adjust font size as needed */
+/* Contact Section */
+.contact-section {
+    background-color: #2c3e50;
+    color: white;
+    padding: 40px 0;
+    margin-top: auto;  /* Pushes the section to the bottom */
+    text-align: center; /* Centers the text */
 }
 
+.contact-info p {
+    margin: 5px 0;
+}
 
-.rounded-image {
-    border-radius: 50%; /* This will make the image round */
-    /* You can also specify a specific value in pixels for more control: border-radius: 10px; */
+.list-inline {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+}
+
+.list-inline-item {
+    margin: 0 10px;
+}
+
+.list-inline-item a {
+    color: white;
+    font-size: 1.5em;
+}
+
+/* Footer Styling */
+footer {
+    text-align: center;
+    padding: 20px;
+    background-color: #34495e;
+    color: #ecf0f1;
+    margin-top: auto;
 }
 

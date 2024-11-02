@@ -253,4 +253,13 @@ footer {
 
 .phone-number {
     color: white !important;
+    text-decoration: none;
+    /* Removes underline on mobile browsers */
+}
+
+/* Ensure any 'a' tags with phone numbers inside the contact section stay white */
+.contact-info a {
+    color: white !important;
+    text-decoration: none;
+    /* Removes underline on mobile browsers */
 }

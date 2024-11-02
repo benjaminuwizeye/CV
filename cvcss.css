@@ -1,6 +1,7 @@
 /* General Styles */
 body {
     overflow-x: hidden;
+    overflow-y: auto;
     /* Prevents horizontal scrolling of the body */
     font-family: 'Montserrat', sans-serif;
     background: linear-gradient(135deg, #f5f7fa, #e0eafc);
@@ -314,4 +315,85 @@ footer {
 .back-to-top-button:hover {
     background-color: #0056b3;
     /* Darker shade on hover */
+}
+
+/* Profile Photo and Header Styling */
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 20px;
+    position: relative;
+    background-color: #2c3e50;
+    color: white;
+}
+
+.branding {
+    display: flex;
+    align-items: center;
+    flex: 1;
+}
+
+.branding-text {
+    margin-left: 20px;
+}
+
+.profile-photo {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    border: 2px solid white;
+    position: absolute;
+    top: 20px;
+    right: 20px;
+}
+
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+    .header {
+        flex-direction: column;
+        align-items: center;
+        padding: 10px;
+    }
+
+    .branding {
+        flex-direction: column;
+        text-align: center;
+        margin-bottom: 10px;
+    }
+
+    .profile-photo {
+        position: relative;
+        top: 0;
+        right: 0;
+        margin-bottom: 10px;
+        width: 70px;
+        /* Slightly smaller for tablets */
+        height: 70px;
+    }
+}
+
+@media (max-width: 480px) {
+    .header {
+        padding: 15px;
+    }
+
+    .branding {
+        text-align: center;
+    }
+
+    .branding-text {
+        margin-left: 0;
+    }
+
+    .profile-photo {
+        width: 60px;
+        height: 60px;
+    }
+
+    .branding-text h1 {
+        font-size: 18px;
+        /* Adjust title font size for mobile */
+    }
 }

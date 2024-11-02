@@ -1,14 +1,20 @@
 function toggleExperienceDetails(card) {
     const details = card.querySelector('.experience-details');
-    const hint = card.querySelector('.click-hint i');
+    const hint = card.querySelector('.click-hint'); // Updated to target entire click-hint element
+    const icon = hint.querySelector('i'); // Separate icon element
+
+    // Check if details are currently displayed
     if (details.style.display === 'block') {
         details.style.display = 'none';
-        hint.className = 'fas fa-angle-down';
+        icon.className = 'fas fa-angle-down'; // Icon points down
+        hint.innerHTML = '<i class="fas fa-angle-down"></i> Click to see details'; // Text when details are hidden
     } else {
         details.style.display = 'block';
-        hint.className = 'fas fa-angle-up';
+        icon.className = 'fas fa-angle-up'; // Icon points up
+        hint.innerHTML = '<i class="fas fa-angle-up"></i> Hide details'; // Text when details are shown
     }
 }
+
 
 // Function to scroll to the top of the page
 function scrollToTop() {

@@ -263,3 +263,8 @@ footer {
     text-decoration: none;
     /* Removes underline on mobile browsers */
 }
+
+.experience-details {
+    display: none;
+    /* Hide experience details by default */
+}

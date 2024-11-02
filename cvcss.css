@@ -2,7 +2,6 @@
 body {
     overflow-x: hidden;
     overflow-y: auto;
-    /* Prevents horizontal scrolling of the body */
     font-family: 'Montserrat', sans-serif;
     background: linear-gradient(135deg, #f5f7fa, #e0eafc);
     color: #333;
@@ -28,16 +27,14 @@ body {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    position: relative;
     flex-wrap: wrap;
-    /* Allows wrapping on smaller screens */
+    position: relative;
 }
 
 .branding {
     display: flex;
     align-items: center;
     flex: 1;
-    /* Ensures branding takes available space */
 }
 
 .branding-text {
@@ -54,13 +51,13 @@ body {
     right: 20px;
 }
 
+/* Navbar */
 .navbar ul {
     list-style: none;
     display: flex;
     margin: 0;
     padding: 0;
     flex-wrap: wrap;
-    /* Allows wrapping of menu items */
 }
 
 .navbar ul li {
@@ -78,7 +75,7 @@ body {
     color: #3498db;
 }
 
-/* Scrollable Experience Cards */
+/* Experience Cards */
 .experience-wrapper {
     display: flex;
     overflow-x: auto;
@@ -104,10 +101,6 @@ body {
     color: #3498db;
     font-size: 0.9em;
     margin-top: 10px;
-}
-
-.experience-details {
-    display: none;
 }
 
 /* Contact Section */
@@ -139,7 +132,7 @@ body {
     font-size: 1.5em;
 }
 
-/* Footer Styling */
+/* Footer */
 footer {
     text-align: center;
     padding: 20px;
@@ -148,252 +141,116 @@ footer {
     margin-top: auto;
 }
 
+/* Download Button */
+.download-section {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.download-button {
+    background-color: #007bff;
+    color: white;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+    font-size: 16px;
+    transition: background-color 0.3s ease;
+    border: none;
+    cursor: pointer;
+}
+
+.download-button:hover {
+    background-color: #0056b3;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+/* Back-to-Top Button */
+.back-to-top-button {
+    position: fixed;
+    bottom: 20px;
+    left: 20px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 10px;
+    font-size: 16px;
+    cursor: pointer;
+    display: none;
+    transition: background-color 0.3s, opacity 0.3s;
+    align-items: center;
+    gap: 5px;
+}
+
+.back-to-top-button .button-text {
+    display: inline;
+    font-size: 14px;
+}
+
+.back-to-top-button:hover {
+    background-color: #0056b3;
+}
+
 /* Responsive Styles */
 @media (max-width: 768px) {
     .header {
         flex-direction: column;
-        /* Stack header items */
         align-items: flex-start;
-        /* Align items to the start */
     }
 
     .branding {
         margin-bottom: 15px;
-        /* Space below branding */
     }
 
     .navbar ul {
         flex-direction: column;
-        /* Stack navbar items */
         width: 100%;
-        /* Full width */
     }
 
     .navbar ul li {
         margin-left: 0;
-        /* Remove left margin */
         margin-bottom: 10px;
-        /* Space between items */
     }
 
     .experience-wrapper {
         flex-direction: column;
-        /* Stack experience cards */
         padding: 10px;
-        /* Add padding */
     }
 
     .experience-card {
         margin-right: 0;
-        /* Remove right margin */
         margin-bottom: 20px;
-        /* Add bottom margin */
     }
 
     .contact-section {
         padding: 20px 0;
-        /* Reduce padding */
     }
 
     .list-inline-item a {
         font-size: 1.2em;
-        /* Smaller icons on mobile */
     }
 }
 
 @media (max-width: 480px) {
     .profile-photo {
         width: 60px;
-        /* Smaller profile photo */
         height: 60px;
-        /* Smaller profile photo */
-    }
-
-    .navbar ul li {
-        margin-bottom: 5px;
-        /* Smaller spacing between navbar items */
-    }
-
-    .experience-card {
-        padding: 15px;
-        /* Smaller padding */
-    }
-
-    .experience-card h3 {
-        font-size: 1.2em;
-        /* Adjust header size */
-    }
-
-    .experience-card p {
-        font-size: 0.9em;
-        /* Adjust paragraph size */
-    }
-}
-
-.download-section {
-    text-align: center;
-    /* Center align the button */
-    margin-top: 20px;
-    /* Space above the button */
-}
-
-.download-button {
-    background-color: #007bff;
-    /* Bootstrap primary color */
-    color: white;
-    /* Text color */
-    padding: 10px 20px;
-    /* Padding around the text */
-    text-decoration: none;
-    /* Remove underline */
-    border-radius: 5px;
-    /* Rounded corners */
-    font-size: 16px;
-    /* Font size */
-    transition: background-color 0.3s ease;
-    /* Smooth transition for hover effect */
-    border: none;
-    /* No border */
-}
-
-.download-button button {
-    background-color: transparent;
-    /* Make the button background transparent */
-    border: none;
-    /* Remove button border */
-    color: inherit;
-    /* Inherit text color */
-    cursor: pointer;
-    /* Pointer cursor */
-}
-
-.download-button:hover {
-    background-color: #0056b3;
-    /* Darker shade for hover effect */
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-    /* Subtle shadow on hover */
-}
-
-.back-to-top-button {
-    position: fixed;
-    /* Fixed position */
-    bottom: 20px;
-    /* Position from the bottom */
-    left: 20px;
-    /* Position from the left */
-    background-color: #007bff;
-    /* Button color */
-    color: white;
-    /* Text color */
-    border: none;
-    /* No border */
-    border-radius: 5px;
-    /* Rounded corners */
-    padding: 10px;
-    /* Padding */
-    font-size: 16px;
-    /* Font size */
-    cursor: pointer;
-    /* Pointer cursor */
-    display: none;
-    /* Initially hidden */
-    transition: background-color 0.3s, opacity 0.3s;
-    /* Transition effects */
-    align-items: center;
-    /* Center items vertically */
-    gap: 5px;
-    /* Space between icon and text */
-}
-
-.back-to-top-button .button-text {
-    display: inline;
-    /* Text display */
-    font-size: 14px;
-    /* Text size */
-}
-
-.back-to-top-button:hover {
-    background-color: #0056b3;
-    /* Darker shade on hover */
-}
-
-/* Profile Photo and Header Styling */
-.header {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    flex-wrap: wrap;
-    padding: 20px;
-    position: relative;
-    background-color: #2c3e50;
-    color: white;
-}
-
-.branding {
-    display: flex;
-    align-items: center;
-    flex: 1;
-}
-
-.branding-text {
-    margin-left: 20px;
-}
-
-.profile-photo {
-    width: 80px;
-    height: 80px;
-    border-radius: 50%;
-    border: 2px solid white;
-    position: absolute;
-    top: 20px;
-    right: 20px;
-}
-
-/* Responsive Adjustments */
-@media (max-width: 768px) {
-    .header {
-        flex-direction: column;
-        align-items: center;
-        padding: 10px;
-    }
-
-    .branding {
-        flex-direction: column;
-        text-align: center;
-        margin-bottom: 10px;
-    }
-
-    .profile-photo {
         position: relative;
         top: 0;
         right: 0;
         margin-bottom: 10px;
-        width: 70px;
-        /* Slightly smaller for tablets */
-        height: 70px;
-    }
-}
-
-@media (max-width: 480px) {
-    .header {
-        padding: 15px;
     }
 
     .branding {
         text-align: center;
+        margin-bottom: 10px;
     }
 
     .branding-text {
         margin-left: 0;
     }
+}
 
-    .profile-photo {
-        width: 60px;
-        height: 60px;
-    }
-
-    .branding-text h1 {
-        font-size: 18px;
-        /* Adjust title font size for mobile */
-    }
+.phone-number {
+    color: white !important;
 }

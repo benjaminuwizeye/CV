@@ -189,37 +189,39 @@
         <div class="contact-info">
             <p><i class="fa fa-phone"></i> +33 6 05 70 43 90</p>
             <p><i class="fa fa-envelope"></i> benjaminuwizeye@gmail.com</p>
-            <p><i class="fa fa-map-marker-alt"></i> Paris, France</p>
+            <p><i class="fa fa-map-marker-alt"></i> Rennes, France</p>
         </div>
         <h3>Find Me Online</h3>
         <ul class="list-inline">
-            <li class="list-inline-item"><a href="https://www.linkedin.com/in/benjaminuwizeye" target="_blank"><i
+            <li class="list-inline-item"><a href="https://www.linkedin.com/in/uwzybeni/" target="_blank"><i
                         class="fab fa-linkedin"></i></a></li>
             <li class="list-inline-item"><a href="https://github.com/benjaminuwizeye" target="_blank"><i
                         class="fab fa-github"></i></a></li>
-            <li class="list-inline-item"><a href="https://twitter.com/benjaminuwizeye" target="_blank"><i
-                        class="fab fa-twitter"></i></a></li>
         </ul>
+
+        <!-- Download CV Button -->
+        <div class="download-section">
+            <a href="BenjaminUwizeyeCv.pdf" target="_blank" class="download-button">
+                <button type="button">Download CV in PDF format</button>
+            </a>
+        </div>
+
     </section>
 
     <footer>
         <p>&copy; 2024 Benjamin Uwizeye. All rights reserved.</p>
     </footer>
 
+    <!-- Back to Top Button -->
+    <!-- Back to Top Button -->
+    <button id="back-to-top" class="back-to-top-button" onclick="scrollToTop()">
+        &#8679; <!-- Up Arrow Icon -->
+        <span class="button-text">Back to Top</span> <!-- Text Label -->
+    </button>
+
+
     <!-- JavaScript for Toggling Experience Details -->
-    <script>
-        function toggleExperienceDetails(card) {
-            const details = card.querySelector('.experience-details');
-            const hint = card.querySelector('.click-hint i');
-            if (details.style.display === 'block') {
-                details.style.display = 'none';
-                hint.className = 'fas fa-angle-down';
-            } else {
-                details.style.display = 'block';
-                hint.className = 'fas fa-angle-up';
-            }
-        }
-    </script>
+    <script src="cvjs.js"></script>
 
 </body>
 

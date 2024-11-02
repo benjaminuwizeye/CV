@@ -1,5 +1,7 @@
 /* General Styles */
 body {
+    overflow-x: hidden;
+    /* Prevents horizontal scrolling of the body */
     font-family: 'Montserrat', sans-serif;
     background: linear-gradient(135deg, #f5f7fa, #e0eafc);
     color: #333;
@@ -26,12 +28,15 @@ body {
     justify-content: space-between;
     align-items: center;
     position: relative;
-    /* Allows absolute positioning of child elements */
+    flex-wrap: wrap;
+    /* Allows wrapping on smaller screens */
 }
 
 .branding {
     display: flex;
     align-items: center;
+    flex: 1;
+    /* Ensures branding takes available space */
 }
 
 .branding-text {
@@ -44,11 +49,8 @@ body {
     border-radius: 50%;
     border: 2px solid white;
     position: absolute;
-    /* Allows for precise positioning */
     top: 20px;
-    /* Adjust for vertical alignment */
     right: 20px;
-    /* Moves the photo to the right side */
 }
 
 .navbar ul {
@@ -56,6 +58,8 @@ body {
     display: flex;
     margin: 0;
     padding: 0;
+    flex-wrap: wrap;
+    /* Allows wrapping of menu items */
 }
 
 .navbar ul li {
@@ -111,9 +115,7 @@ body {
     color: white;
     padding: 40px 0;
     margin-top: auto;
-    /* Pushes the section to the bottom */
     text-align: center;
-    /* Centers the text */
 }
 
 .contact-info p {
@@ -143,4 +145,173 @@ footer {
     background-color: #34495e;
     color: #ecf0f1;
     margin-top: auto;
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+    .header {
+        flex-direction: column;
+        /* Stack header items */
+        align-items: flex-start;
+        /* Align items to the start */
+    }
+
+    .branding {
+        margin-bottom: 15px;
+        /* Space below branding */
+    }
+
+    .navbar ul {
+        flex-direction: column;
+        /* Stack navbar items */
+        width: 100%;
+        /* Full width */
+    }
+
+    .navbar ul li {
+        margin-left: 0;
+        /* Remove left margin */
+        margin-bottom: 10px;
+        /* Space between items */
+    }
+
+    .experience-wrapper {
+        flex-direction: column;
+        /* Stack experience cards */
+        padding: 10px;
+        /* Add padding */
+    }
+
+    .experience-card {
+        margin-right: 0;
+        /* Remove right margin */
+        margin-bottom: 20px;
+        /* Add bottom margin */
+    }
+
+    .contact-section {
+        padding: 20px 0;
+        /* Reduce padding */
+    }
+
+    .list-inline-item a {
+        font-size: 1.2em;
+        /* Smaller icons on mobile */
+    }
+}
+
+@media (max-width: 480px) {
+    .profile-photo {
+        width: 60px;
+        /* Smaller profile photo */
+        height: 60px;
+        /* Smaller profile photo */
+    }
+
+    .navbar ul li {
+        margin-bottom: 5px;
+        /* Smaller spacing between navbar items */
+    }
+
+    .experience-card {
+        padding: 15px;
+        /* Smaller padding */
+    }
+
+    .experience-card h3 {
+        font-size: 1.2em;
+        /* Adjust header size */
+    }
+
+    .experience-card p {
+        font-size: 0.9em;
+        /* Adjust paragraph size */
+    }
+}
+
+.download-section {
+    text-align: center;
+    /* Center align the button */
+    margin-top: 20px;
+    /* Space above the button */
+}
+
+.download-button {
+    background-color: #007bff;
+    /* Bootstrap primary color */
+    color: white;
+    /* Text color */
+    padding: 10px 20px;
+    /* Padding around the text */
+    text-decoration: none;
+    /* Remove underline */
+    border-radius: 5px;
+    /* Rounded corners */
+    font-size: 16px;
+    /* Font size */
+    transition: background-color 0.3s ease;
+    /* Smooth transition for hover effect */
+    border: none;
+    /* No border */
+}
+
+.download-button button {
+    background-color: transparent;
+    /* Make the button background transparent */
+    border: none;
+    /* Remove button border */
+    color: inherit;
+    /* Inherit text color */
+    cursor: pointer;
+    /* Pointer cursor */
+}
+
+.download-button:hover {
+    background-color: #0056b3;
+    /* Darker shade for hover effect */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    /* Subtle shadow on hover */
+}
+
+.back-to-top-button {
+    position: fixed;
+    /* Fixed position */
+    bottom: 20px;
+    /* Position from the bottom */
+    left: 20px;
+    /* Position from the left */
+    background-color: #007bff;
+    /* Button color */
+    color: white;
+    /* Text color */
+    border: none;
+    /* No border */
+    border-radius: 5px;
+    /* Rounded corners */
+    padding: 10px;
+    /* Padding */
+    font-size: 16px;
+    /* Font size */
+    cursor: pointer;
+    /* Pointer cursor */
+    display: none;
+    /* Initially hidden */
+    transition: background-color 0.3s, opacity 0.3s;
+    /* Transition effects */
+    align-items: center;
+    /* Center items vertically */
+    gap: 5px;
+    /* Space between icon and text */
+}
+
+.back-to-top-button .button-text {
+    display: inline;
+    /* Text display */
+    font-size: 14px;
+    /* Text size */
+}
+
+.back-to-top-button:hover {
+    background-color: #0056b3;
+    /* Darker shade on hover */
 }

@@ -1,6 +1,7 @@
 /* General Styles */
 body {
     overflow-x: hidden;
+    /* Prevent horizontal scrolling */
     overflow-y: auto;
     font-family: 'Montserrat', sans-serif;
     background: linear-gradient(135deg, #f5f7fa, #e0eafc);
@@ -14,9 +15,13 @@ body {
 
 .container {
     max-width: 1100px;
+    /* Set a maximum width */
+    width: 100%;
+    /* Make the container responsive */
     margin: 0 auto;
+    /* Center the container */
     padding: 0 15px;
-    flex-grow: 1;
+    /* Padding for the container */
 }
 
 /* Header Styling */
@@ -28,6 +33,7 @@ body {
     justify-content: space-between;
     align-items: center;
     flex-wrap: wrap;
+    /* Allow wrapping */
     position: relative;
 }
 
@@ -58,6 +64,7 @@ body {
     margin: 0;
     padding: 0;
     flex-wrap: wrap;
+    /* Allow wrapping */
 }
 
 .navbar ul li {
@@ -81,18 +88,17 @@ body {
     overflow-x: auto;
     /* Allow horizontal scrolling */
     padding-bottom: 20px;
-    max-width: 1100px;
+    max-width: 100%;
     /* Match container width */
     margin: 0 auto;
     /* Center the experience section */
 }
 
 .experience-card {
-    min-width: 300px;
-    /* Minimum width of each card */
+    flex: 1 0 300px;
+    /* Allow cards to grow and shrink with a minimum width */
     background: white;
     margin-right: 20px;
-    /* Margin between cards */
     border-radius: 10px;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
     padding: 20px;
@@ -269,6 +275,13 @@ footer {
 
     .branding-text {
         margin-left: 0;
+    }
+
+    .download-button {
+        width: 100%;
+        /* Full width on small screens */
+        padding: 15px;
+        /* Larger padding for touch targets */
     }
 }
 

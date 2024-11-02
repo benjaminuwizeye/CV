@@ -1,6 +1,6 @@
 /* General Styles */
 body {
-    overflow-x: hidden;
+    overflow-x: auto;
     overflow-y: auto;
     font-family: 'Montserrat', sans-serif;
     background: linear-gradient(135deg, #f5f7fa, #e0eafc);
